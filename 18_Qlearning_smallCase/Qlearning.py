@@ -15,10 +15,10 @@ Epsilon = 0.1
 def epsilon_greedy(Q,indx):
     prob = random.random()
     action = 99; 
-    if prob>0.8: 
+    if prob>0.2: 
         action = np.argmax(Q[indx,:])
     else:
-        action = np.random.randint(0,4) # generate 
+        action = np.random.randint(0,4) # generate integers : 0, 1, 2, 3
     return action 
 
 
